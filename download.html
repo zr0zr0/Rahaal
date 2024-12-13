@@ -1,0 +1,547 @@
+<html><head><base href="." /><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حمّل تطبيق رحال الآن – احتساب تكلفة الرحلات بكل سهولة</title>
+<meta property="og:title" content="رحال - شريكك الأمثل لاحتساب تكلفة النقل" />
+<meta property="og:description" content="جرّب الآن التطبيق الذكي الذي يجعل رحلاتك أكثر سهولة ودقة. احتساب تكلفة الرحلات بكل سهولة مع تطبيق رحال" />
+<meta property="og:image" content="https://i.ibb.co/3ybMn9k/Screenshot-Google-Play-Store.jpg" />
+<meta property="og:url" content="https://your-domain.com" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="تطبيق رحال" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="رحال - شريكك الأمثل لاحتساب تكلفة النقل">
+<meta name="twitter:description" content="جرّب الآن التطبيق الذكي الذي يجعل رحلاتك أكثر سهولة ودقة. احتساب تكلفة الرحلات بكل سهولة مع تطبيق رحال">
+<meta name="twitter:image" content="https://i.ibb.co/3ybMn9k/Screenshot-Google-Play-Store.jpg">
+<link rel="icon" type="image/png" href="https://i.ibb.co/3ybMn9k/Screenshot-Google-Play-Store.jpg">
+<link rel="apple-touch-icon" href="https://i.ibb.co/3ybMn9k/Screenshot-Google-Play-Store.jpg">
+<meta name="theme-color" content="#8B0000">
+<meta name="description" content="تطبيق رحال - الحل الأمثل لاحتساب تكلفة النقل في اليمن. احسب تكلفة رحلاتك بدقة وسهولة مع تطبيقنا المتطور">
+<meta name="keywords" content="رحال, تطبيق رحال, حساب تكلفة النقل, تكسي اليمن, خدمات النقل">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet" />
+<style>
+:root {
+  --primary: #8B0000;
+  --gold: #FFD700;
+  --dark: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  background: linear-gradient(135deg, var(--primary), var(--dark));
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  margin: 0 auto 2rem;
+  display: block;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  animation: fadeInScale 1s ease;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: slideDown 0.8s ease;
+}
+
+.header p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: white;
+  color: var(--primary);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.download-btn:hover {
+  background: var(--gold);
+  transform: translateY(-3px);
+}
+
+.features {
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  background: #f9f9f9;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.screenshots {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.swiper {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.app-description {
+  padding: 4rem 2rem;
+  background: linear-gradient(45deg, var(--primary), var(--dark));
+  color: white;
+}
+
+.app-description .content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  height: 300px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.rotating-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.rotating-text.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rotating-text.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.how-to {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.step {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-right: 3px solid var(--gold);
+  position: relative;
+}
+
+.step::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: var(--gold);
+  position: absolute;
+  right: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.webview-demo {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #8B0000, #4a0000);
+  position: relative;
+  overflow: hidden;
+}
+
+.webview-demo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(139,0,0,0.8) 0%, rgba(74,0,0,0.95) 100%);
+  pointer-events: none;
+}
+
+.webview-demo .container {
+  position: relative;
+  z-index: 1;
+}
+
+.webview-demo h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1s ease;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.demo-description {
+  font-size: 1.2rem;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.cta-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.try-now-btn {
+  display: inline-block;
+  padding: 1.2rem 3.5rem;
+  background: white;
+  color: #8B0000;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.try-now-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  background: var(--gold);
+  color: #8B0000;
+}
+
+.webview-container {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  margin: 2rem auto;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  background: white;
+  transform: perspective(1000px) rotateX(2deg);
+  transition: transform 0.3s ease;
+  border: 12px solid #1a1a1a;
+  position: relative;
+}
+
+.webview-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 25px;
+  background: #1a1a1a;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 1;
+}
+
+.webview-container:hover {
+  transform: perspective(1000px) rotateX(0deg);
+}
+
+.webview-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background: var(--dark);
+  color: #ffffff;
+}
+
+.footer p {
+  color: #ffffff;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeInScale {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .header h1 { font-size: 2rem; }
+  .features { grid-template-columns: 1fr; }
+  .webview-container {
+    width: 100%;
+    max-width: 375px;
+    height: 700px;
+    border-width: 8px;
+  }
+  
+  .webview-container::before {
+    width: 120px;
+    height: 20px;
+  }
+  
+  .webview-demo h2 {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+  
+  .demo-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <img src="https://i.ibb.co/3ybMn9k/Screenshot-Google-Play-Store.jpg" alt="رحال لوجو" class="app-logo">
+  <h1>رحال خاص</h1>
+  <h2> شريكك الأمثل لاحتساب تكلفة النقل</h2>
+  <h2> لأن كل رحلة تستحق حلاً مستقلاً</h2>
+  <p> "صممنا هذا التطبيق لدعم سائقي التكاسي وأصحاب النقل في اليمن، لمساعدتهم على احتساب تكاليف رحلاتهم الخاصة دون الحاجة لاعتماد خدمات تخصم من أرباحهم. حافظ على أرباحك الكاملة وأدر رحلاتك بسهولة ومرونة"</p>
+  <a href="https://raw.githubusercontent.com/Goody-Code/app/main/Rahaal.apk" class="download-btn">تحميل الآن</a>
+</header>
+
+<section class="features">
+  <div class="feature-card">
+    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M12 6v6l4 2"/>
+    </svg>
+    <h3>سهولة في الاستخدام</h3>
+    <p>كل ما تحتاجه في مكان واحد</p>
+  </div>
+  
+  <div class="feature-card">
+    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+      <path d="M2 17l10 5 10-5"/>
+      <path d="M2 12l10 5 10-5"/>
+    </svg>
+    <h3>حساب فوري</h3>
+    <p>حساب تكلفة الرحلات بدقة عالية</p>
+  </div>
+  
+  <div class="feature-card">
+    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+      <rect x="3" y="3" width="18" height="18" rx="2"/>
+      <path d="M8 12h8"/>
+      <path d="M12 8v8"/>
+    </svg>
+    <h3>واجهة مستخدم حديثة</h3>
+    <p>مصممة خصيصاً للسائقين</p>
+  </div>
+</section>
+
+<section class="screenshots">
+  <h2>اكتشف رحال قبل أن تبدأ!</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://i.ibb.co/V9tHZty/Screenshot.jpg" alt="واجهة التطبيق 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://i.ibb.co/J5FCLDH/Screenshot.jpg" alt="واجهة التطبيق 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://i.ibb.co/G9L5NCv/Screenshot.jpg" alt="واجهة التطبيق 3">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section class="app-description">
+  <div class="content">
+    <div class="rotating-text">"تم تصميم هذا التطبيق خصيصًا لدعم سائقي التكاسي وأصحاب النقل في اليمن الذين يرغبون في إدارة رحلاتهم الخاصة دون الحاجة للاعتماد على خدمة رحال التقليدية التي تخصم 15% من إجمالي رسوم النقل. مع تطبيق رحال الخاص، يمكنك بسهولة احتساب تكلفة أي رحلة لزبائنك الخاصين دون أي خصومات إضافية. الهدف هو توفير أداة مرنة ومستقلة تساعدك على تحسين أرباحك والاحتفاظ بالسيطرة الكاملة على زبائنك وخدماتك."</div>
+    <div class="rotating-text">"تطبيق رحال الخاص مصمم لمساعدة سائقي التكاسي وأصحاب النقل في اليمن على احتساب تكلفة المشاوير الخاصة لزبائنهم بشكل دقيق وسريع. هذا التطبيق يتيح لك التحكم الكامل بتسعير رحلاتك الخاصة بعيدًا عن استخدام خدمة رحال التقليدية التي تخصم 15% من رسوم النقل، مما يمنحك مرونة واستقلالية أكبر."</div>
+    <div class="rotating-text">"يأتي تطبيق رحال الخاص كأداة ذكية وبديلة لسائقي التكاسي وأصحاب النقل في اليمن الذين يفضلون التعامل مع زبائنهم بشكل مباشر ودون الحاجة لاستخدام خدمة رحال التقليدية. التطبيق يقدم نفس دقة وكفاءة الخدمة في احتساب تكاليف النقل، ولكن دون دفع نسبة الـ 15% من رسوم الرحلة لخدمة رحال. بهذه الطريقة، يمكن للسائقين تحسين أرباحهم والاستفادة الكاملة من رحلاتهم الخاصة."</div>
+    <div class="rotating-text">"هل تبحث عن طريقة لتحسين إدارة رحلاتك الخاصة؟ تطبيق رحال الخاص هو الحل الأمثل! مصمم خصيصًا لسائقي التكاسي والنقل في اليمن، يتيح لك التطبيق احتساب تكلفة المشاوير الخاصة لزبائنك بسهولة ودون أي رسوم إضافية مثل تلك الموجودة في خدمة رحال التقليدية. احصل على استقلاليتك الكاملة وزد من أرباحك الآن!"</div>
+    <div class="rotating-text">"مع تطبيق رحال الخاص، لم تعد بحاجة إلى القلق بشأن خصومات خدمات الوساطة مثل رحال. هذا التطبيق مخصص لسائقي التكاسي الذين لديهم زبائنهم الخاصين ويريدون إدارة تكاليف الرحلات بسهولة واحترافية. احتسب تكلفة النقل بنفسك واحتفظ بأرباحك كاملة دون الحاجة لدفع نسبة الـ 15% لأي جهة أخرى."</div>
+    <div class="rotating-text">"ابداء رحلتك الان بشكل مستقل - هدفنا هو ان يستطيع سائق النقل بداء راحلاته وتنفيذها وحساب تكلف الرحلات لمعلائه بشكل بسيط وفعال، مع التأكيد على الاستقلالية وزيادة الأرباح كسائق تكسي، دون الاعتماد على أنظمة الوساطة."</div>
+  </div>
+</section>
+
+<section class="how-to">
+  <div class="timeline">
+    <div class="step">
+      <h3>الخطوة الأولى</h3>
+      <p>(تحميل التطبيق) قم بتحميل التطبيق من الرابط المخصص.</p>
+    </div>
+    <div class="step">
+      <h3>الخطوة الثانية</h3>
+      <p>(تشغيل التطبيق وتحديد الموقع) عند فتح التطبيق لأول مرة، سيطلب منك السماح بالوصول إلى الموقع الجغرافي.</p>
+    </div>
+    <div class="step">
+      <h3>الخطوة الثالثة</h3>
+      <p>(إعداد الملف الشخصي) قم بإدخال اسمك واختيار نوع سيارة النقل الخاص بك.</p>
+    </div>
+    <div class="step">
+      <h3>الخطوة الرابعة</h3>
+      <p>(تحديد نقطة الانطلاق) حدد وجهتك وحدد موقع الاقلاع الخاص بالرحلة.</p>
+    </div>
+    <div class="step">
+      <h3>الخطوة الخامسة</h3>
+      <p>(بدء الرحلة) اضغط على زر "بدء الرحلة" وسيبدأ التطبيق في حساب التكلفة.</p>
+    </div>
+    <div class="step">
+      <h3>الخطوة السادسة</h3>
+      <p>(إنهاء الرحلة) عند الوصول، اضغط على زر "إنهاء الرحلة" لعرض التكلفة النهائية.</p>
+    </div>
+  </div>
+</section>
+
+<section class="webview-demo">
+  <div class="container">
+    <h2>جرّب خدمة رحال الخاص مباشرة</h2>
+    <p class="demo-description">اختبر قوة وسهولة استخدام تطبيق رحال الخاص من خلال هذا العرض التجريبي المباشر. اكتشف كيف يمكنك إدارة رحلاتك بكفاءة عالية.</p>
+    
+    <div class="webview-container">
+      <iframe src="https://zr0zr0.github.io/Rahaal/index" frameborder="0"></iframe>
+    </div>
+    
+    <div class="cta-container">
+      <a href="https://raw.githubusercontent.com/Goody-Code/app/main/Rahaal.apk" class="try-now-btn">جرّب الآن</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <a href="https://raw.githubusercontent.com/Goody-Code/app/main/Rahaal.apk" class="download-btn">تحميل الآن</a>
+  <p> 2024 رحال – جميع الحقوق محفوظة</p>
+  <p>تصميم المهندس خالد الغيلي</p>
+</footer>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const texts = document.querySelectorAll('.rotating-text');
+    let currentIndex = 0;
+  
+    // Show first text initially
+    texts[0].classList.add('active');
+  
+    function rotateText() {
+      // Remove active class from current text
+      texts[currentIndex].classList.add('fade-out');
+      texts[currentIndex].classList.remove('active');
+    
+      // Move to next text
+      currentIndex = (currentIndex + 1) % texts.length;
+    
+      // Add active class to next text
+      texts[currentIndex].classList.remove('fade-out');
+      texts[currentIndex].classList.add('active');
+    }
+  
+    // Rotate text every 5 seconds
+    setInterval(rotateText, 5000);
+  });
+</script>
+
+</body></html>
